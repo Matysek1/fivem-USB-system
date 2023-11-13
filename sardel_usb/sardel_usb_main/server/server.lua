@@ -37,7 +37,8 @@ AddEventHandler('sard_usb:giveitem', function(flash)
     local xPlayer = ESX.GetPlayerFromId(source)
     if flash == 'usb_blue' then
         xPlayer.addInventoryItem(SConfig.blueitem, SConfig.blueitemcount)
-   
+    elseif flash == 'usb_red' then 
+        xPlayer.addInventoryItem(SConfig.reditem, SConfig.reditemcount)
     elseif flash == 'usb_gold' then 
         xPlayer.addInventoryItem(SConfig.golditem, SConfig.golditemcount)
     elseif flash == 'usb_diamond' then
